@@ -1,0 +1,14 @@
+body {
+    background-color:bisque ;
+}
+
+a {
+    padding: 50px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    padding-left: 20px;
+    image-rendering: auto;
+}

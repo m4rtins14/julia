@@ -1,0 +1,39 @@
+body {
+    background-color: orchid;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: blueviolet;
+    color: black;
+    border-radius: 3px;
+    border-style: dashed;
+    border-width: 3px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+}
+
+img {
+    width: 600px;
+    height: auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+}

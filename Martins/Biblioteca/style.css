@@ -1,0 +1,42 @@
+
+
+h1 {
+    color:darkmagenta; /*Cor do texto*/
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*Troca a fonte do texto*/
+    text-align: justify;
+    /*deixa o texto justificado*/
+}
+
+.texto { /*Uso . para chamar uma classe*/
+    color: fuchsia;
+}
+
+#titulo {
+    color: darkblue;
+}
+
+a{
+    text-decoration: none;
+    font-size: 50px; /*Muda o tamanho do texto*/
+    background-color: aqua;
+    color: black;
+    border-radius: 7px; /*Arredonda a borda*/
+    border-color: darkcyan; /*Cor da borda*/
+    border-style: dashed; /*Estilo da borda*/
+    border-width: 3px; /*Largura da borda*/
+    padding: 5px 5px 5px 5px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+div {
+    text-align: center;
+}
