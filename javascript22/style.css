@@ -1,0 +1,43 @@
+.quadrado img{
+    width: auto;
+    height: 120px;
+}
+.ret{
+    width: auto;
+    height: 150px;
+}
+.inicio{
+    background-image: linear-gradient(to top left,rgb(200, 255, 0), rgb(0, 13, 255),rgb(184, 48, 211));
+    width: auto;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.inicio .quadrados{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.quadrado{
+background-color: #F1F6FE;
+    border: 1px solid #8CA9CE;
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0 20px;
+    width: 230px;
+    transition: 0.3s ease-in-out;
+}
+.quadrado:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px 1px;
+}
+
+.geral{
+    display: flex;
+    margin: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
