@@ -1,0 +1,47 @@
+body{
+    background-color: blueviolet;
+}
+
+.container{
+ text-align: center;
+ color: white;
+ padding: 200px;
+ 
+}
+
+.entrada{
+    color: white;
+}
+
+.container{
+    padding: 100px;
+    background-color: black;
+    margin: 100px;
+    border-radius: 7px;
+}
+
+button{
+    color: black;
+    background-color: violet;
+    margin: 20px;
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+#resultado{
+    color: gainsboro;
+}
+
+#min{
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+}
+
+#max{
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+}
+
