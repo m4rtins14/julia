@@ -1,0 +1,97 @@
+.menu-header {
+    width: 60%;
+}
+
+.conteudo-sobre {
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-sobre {
+    width: 80%;
+}
+
+.texto-sobre {
+    width: 80%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    justify-content: space-between;
+}
+
+.conteudo-info {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo-endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 660px;
+    justify-content: space-between;
+}
+
+.conteudo-endereco h2 {
+    align-self: flex-start;
+}
+
+.texto-endereco p {
+    width: 100%;
+}
+
+.mapa {
+    position: unset;
+    width: 400px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0; box-sizing: border-box;
+    
+    }
+    
+    header {
+        background-color: #ff0000;
+        height: 80px; width: 100vw;
+    
+    }
+    
+    .conteudo{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        width: 85%;
+        max-width: 1200px;
+        margin: 0 auto;
+    
+    }
+    .menu{
+        font-family: 'Gill Sans', 'Gill Sans MT, Calibri, Trebuchet MS', sans-serif;
+        display: flex; justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        cursor: pointer;
+     }
+        
+    .menu a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        transition: 0.5s;
+      }
+
+      .menu a:hover{
+        font-size: 1.6em;
+        transition: 0.5s;
+        text-shadow:4px 4px 6px #0000007a;
+      }
+
+      .menu-barras{
+        display: none;
+      }
