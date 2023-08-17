@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Livros</title>
+</head>
+<body>
+    <h1>Cadastro de livros</h1>
+    <input id="nomeLivro" placeholder="Nome" type="text">
+    <input id="autorLivro" placeholder="Autor" type="text">
+    <input id="anoLivro" placeholder="Ano" type="text">
+    <button onclick="adicionar()">Adicionar Livro</button>
+    <button onclick="mostrarLivros()">Mostrar</button>
+    <p id="livroInfo">Cadastre um livro</p>
+    <p id="quantidadeLivros">Nenhum livro cadastrado ainda.</p>
+    <div id="carousel"></div>
+
+    <script>
+        let biblioteca = [];
+
+        function cadastro(nome, autor, ano) {
+            var livro = {
+                titulo: nome,
+                autor: autor,
+                ano: ano
+            };
+            biblioteca.push(livro);
+            atualizarInformacoes();
+        }
+
+        function adicionar() {
+            let nome = document.getElementById('nomeLivro').value;
+            let autor = document.getElementById('autorLivro').value;
+            let ano = document.getElementById('anoLivro').value;
+            cadastro(nome, autor, ano);
+        }
+
+        function mostrarLivros() {
+            if (biblioteca.length > 0) {
+                console.log(`Título do primeiro livro: ${biblioteca[0].titulo}`);
+            } else {
+                console.log("Nenhum livro cadastrado ainda.");
+            }
+        }
+
+        function atualizarInformacoes() {
+            const livroInfo = document.getElementById('livroInfo');
+            const quantidadeLivros = document.getElementById('quantidadeLivros');
+            const carousel = document.getElementById('carousel');
+
+            if (biblioteca.length > 0) {
+                livroInfo.textContent = "Livros cadastrados:";
+                quantidadeLivros.textContent = `Quantidade de livros: ${biblioteca.length}`;
+                carousel.innerHTML = ""; // Limpa o carrossel
+
+                biblioteca.forEach(livro => {
+                    const img = document.createElement('img');
+                    img.src = 'livro1.jpg';
+                    img.alt = livro.titulo;
+                    carousel.appendChild(img);
+                });
+            } else {
+                livroInfo.textContent = "Cadastre um livro";
+                quantidadeLivros.textContent = "Nenhum livro cadastrado ainda.";
+                carousel.innerHTML = ""; // Limpa o carrossel
+            }
+        }
+    </script>
+</body>
+</html>
