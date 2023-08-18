@@ -53,7 +53,7 @@
             if (biblioteca.length > 0) {
                 livroInfo.textContent = "Livros cadastrados:";
                 quantidadeLivros.textContent = `Quantidade de livros: ${biblioteca.length}`;
-                carousel.innerHTML = ""; // Limpa o carrossel
+                carousel.innerHTML = ""; 
 
                 biblioteca.forEach(livro => {
                     const img = document.createElement('img');
@@ -64,7 +64,7 @@
             } else {
                 livroInfo.textContent = "Cadastre um livro";
                 quantidadeLivros.textContent = "Nenhum livro cadastrado ainda.";
-                carousel.innerHTML = ""; // Limpa o carrossel
+                carousel.innerHTML = ""; 
             }
         }
     </script>

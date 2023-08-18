@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "biblioteca",
+			"path": "."
+		},
+		{
+			"name": "livros",
+			"path": "../livros"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "biblioteca"
+	}
+}
